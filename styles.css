@@ -1,61 +1,35 @@
-
-/* Your CSS Code here. */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f4f4f4;
-}
-
-.player {
-  max-width: 750px;
-  margin: 0 auto;
-  background: #000;
-  border: 2px solid #333;
-}
-
-.viewer {
-  width: 100%;
-}
-
-.controls {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background: #333;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.progress {
-  flex: 1;
-  height: 5px;
-  background: #555;
+.wrapper {
+  max-width: 800px;
+  position: relative;
+}
+
+.speed {
+  position: relative;
+  height: 150px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
   cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.progress__filled {
-  width: 0;
-  background: #ffc600;
-  height: 100%;
-}
-
-.buttons {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: flex-end;
 }
 
-button {
+.speed-bar {
   background: #ffc600;
-  border: 0;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ff9500;
-}
-
-input[type="range"] {
   width: 100%;
-  margin-top: 5px;
+  height: 20%;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 20px;
 }
