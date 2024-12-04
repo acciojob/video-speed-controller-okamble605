@@ -1,2 +1,61 @@
 
 /* Your CSS Code here. */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+.player {
+  max-width: 750px;
+  margin: 0 auto;
+  background: #000;
+  border: 2px solid #333;
+}
+
+.viewer {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #333;
+}
+
+.progress {
+  flex: 1;
+  height: 5px;
+  background: #555;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.progress__filled {
+  width: 0;
+  background: #ffc600;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #ffc600;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff9500;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
